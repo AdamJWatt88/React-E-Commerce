@@ -1,0 +1,78 @@
+.shopping-cart-card-container {
+  background-color: white;
+  padding: 1rem;
+  height: 100%;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shopping-cart-title {
+  font-size: 1.5rem;
+}
+
+.cart-card {
+  background-color: white;
+  border-top: rgb(134, 109, 109) 2px solid;
+  height: 20rem;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+}
+
+.cart-card:last-of-type {
+  border-bottom: rgb(134, 109, 109) 2px solid;
+}
+
+.cart-card__title {
+  font-weight: 300;
+}
+
+.cart-card__body {
+  display: flex;
+  height: 100%;
+  width: 75%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  text-align: center;
+}
+
+.cart-card__img {
+  max-height: 100%;
+  max-width: 50%;
+  height: 25rem;
+  width: 25rem;
+  object-fit: contain;
+}
+
+.cart-card__button-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.cart-card__button-group select {
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+}
+
+.cart-card__button-group-btn {
+  padding-left: 1rem;
+  color: black;
+  border-left: rgb(134, 109, 109) 2px solid;
+}
+
+.cart-card__button-group-btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .subtotal {
+    display: none;
+  }
+}

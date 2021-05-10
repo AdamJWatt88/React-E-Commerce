@@ -1,0 +1,52 @@
+.sign-up__card {
+  height: fit-content;
+  width: 100%;
+  border-radius: 1rem;
+  width: 50%;
+  background-color: var(--bg-color-secondary);
+  padding: 1rem;
+}
+
+.sign-up__form {
+  display: block;
+  color: white;
+  width: 100%;
+}
+
+.sign-up__font--white {
+  margin-right: auto;
+  color: white;
+}
+
+.sign-up__input {
+  border-radius: 0.2rem;
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-style: none;
+  padding: 1rem;
+}
+
+.sign-up__button-group {
+  display: flex;
+  width: 100%;
+}
+
+.sign-up__password {
+  display: none;
+}
+
+.sign-up__password-match {
+  color: #ff0000;
+}
+
+.sign-up__button-group .btn {
+  margin-left: auto;
+}
+
+@media (max-width: 500px) {
+  .sign-up__card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,21 @@
+.cost-total {
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 25%; */
+  padding: 0.5rem;
+}
+
+.cost-total .btn--checkout {
+  width: 100%;
+}
+
+@media (max-width: 720px) {
+  .cost-total {
+    margin-left: auto;
+  }
+}

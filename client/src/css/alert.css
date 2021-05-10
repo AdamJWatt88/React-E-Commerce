@@ -1,0 +1,18 @@
+.alert {
+  text-align: center;
+  padding: 0.7rem;
+  margin: 1rem 0;
+  opacity: 0.9;
+  color: rgb(255, 255, 255);
+  width: 50%;
+}
+
+.alert-danger {
+  background: var(--bg-color-danger);
+}
+
+@media (max-width: 500px) {
+  .alert {
+    width: 100%;
+  }
+}

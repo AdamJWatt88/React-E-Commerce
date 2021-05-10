@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3.125rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--bg-color-primary);
+  color: white;
+}
+
+.navbar__title {
+  font-size: 1.5rem;
+}
+
+.navbar__title-group {
+  display: flex;
+  align-items: center;
+  height: 3.125rem;
+}
+
+.navbar__categories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 3.125rem;
+}
+
+.navbar__categories:hover {
+  cursor: pointer;
+}
+
+.navbar__categories:hover > .play {
+  cursor: pointer;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.paused {
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.lni-chevron-down {
+  font-size: 0.75rem;
+}
+
+.navbar__dropdown {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  color: #000;
+  background-color: #fff;
+  transform: translate(27%, 62%);
+  width: 15rem;
+}
+
+.show {
+  display: flex;
+}
+
+.navbar__list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar__list-item {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 0 0.5rem 2rem;
+  margin-bottom: 0;
+}
+
+.navbar__list-item:hover {
+  background-color: #eaeded;
+}
+
+.navbar__btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__user-login {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__user-login a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.navbar__user-login a:hover {
+  opacity: 60%;
+}
+
+.navbar__user-login img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.navbar__icon--bg-color {
+  background-color: var(--bg-color-primary);
+}
+
+.navbar__btn-group .btn {
+  margin-left: 0.5rem;
+}
+
+.navbar__icon {
+  font-size: 1rem;
+  color: white;
+}
+
+@media (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar__categories,
+  .navbar__btn-group {
+    display: none;
+  }
+}

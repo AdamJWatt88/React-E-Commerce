@@ -1,0 +1,152 @@
+:root {
+  /* button colors */
+  --btn-bg-color-primary: #01295f;
+  --btn-bg-color-secondary: #437f97;
+  --btn-bg-color-checkout: #849324;
+  --btn-bg-color-add: #ffb30f;
+  --btn-bg-color-delete: #fd151b;
+  /* header and login */
+  --bg-color-primary: #0a0a0a;
+  --bg-color-secondary: #01295f;
+  /* alerts */
+  --bg-color-danger: #bd1515;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+* {
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  position: relative;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+/************************************************
+Buttons
+************************************************/
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  outline: none;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.btn--primary {
+  background-color: var(--btn-bg-color-primary);
+}
+
+.btn--secondary {
+  background-color: var(--btn-bg-color-secondary);
+}
+
+.btn--checkout {
+  background-color: var(--btn-bg-color-checkout);
+}
+
+.btn--add {
+  background-color: var(--btn-bg-color-add);
+}
+
+.btn--delete {
+  background-color: var(--btn-bg-color-delete);
+}
+
+.container {
+  padding: 1rem;
+  height: 100vh;
+  width: 100%;
+}
+
+/************************************************
+FLEX
+************************************************/
+
+.container-flex {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.flex-dc {
+  flex-direction: column;
+}
+
+/************************************************
+GRID
+************************************************/
+.container-grid {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.col-4 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/*********************************************************************
+MARGIN
+*********************************************************************/
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.ml-a {
+  margin-left: auto;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+/* common breakpoints for widths of devices:
+* 320px — 480px: Mobile devices
+* 481px — 768px: iPads, Tablets
+* 769px — 1024px: Small screens, laptops
+* 1025px — 1200px: Desktops, large screens
+* 1201px and more —  Extra large screens, TV */
